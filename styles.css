@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    background-color: #dbcdbd; /* Fondo marrón claro/beige */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos para el header y el héroe */
+header .hero {
+    background-image: url('Fondo.jpeg'); /* Reemplazar con imagen de fondo de muebles */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+header .hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 4); /* Sombra más grande y oscura */
+}
+
+header .hero p {
+    font-size: 20px;
+    font-weight: 300;
+    text-shadow: 10px 10px 30px rgba(0, 0, 0, 1); /* Sombra muy fuerte y oscura */
+}
+
+
+
+/* Sección de Información */
+.info-section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-content img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-text h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #8B0000;
+    margin-bottom: 20px;
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.info-section a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8B0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.info-section a:hover {
+    background-color: #a52a2a;
+}
+
+/* Sección de Galería */
+.gallery-section {
+    max-width: 1100px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.gallery-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #8B0000;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex-basis: 32%;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gallery-item h3 {
+    font-size: 24px;
+    margin: 15px;
+    color: #8B0000;
+}
+
+.gallery-item p {
+    font-size: 16px;
+    margin: 15px;
+    color: #555;
+}
+
+/* Botón de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 100;
+    background-color: white; /* Fondo blanco */
+    border-radius: 50%; /* Para mantener el botón redondeado */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+}
+
+.whatsapp-button img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.whatsapp-button img:hover {
+    transform: scale(1.1);
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    header .hero h1 {
+        font-size: 36px;
+    }
+
+    header .hero p {
+        font-size: 16px;
+    }
+
+    .info-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-content img {
+        width: 100%;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery-item {
+        flex-basis: 100%;
+    }
+}
